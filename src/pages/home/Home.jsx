@@ -5,7 +5,6 @@ const Home = () => {
     return (
         <div className='home'>
             <MainCarousel />
-            <br />carousel main...
             <br />img: company brouchure and more... 
             <br />carousel Online retail stores
             <br />img: Korean music market
