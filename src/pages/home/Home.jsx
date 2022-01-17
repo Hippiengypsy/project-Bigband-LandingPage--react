@@ -1,12 +1,14 @@
-import MainCarousel from "../../components/Carousel/MainCarousel";
-import  "./Home.scss";
+import MainCarousel from "../../components/carousel/MainCarousel";
+import HomeAbout from "./01_about/HomeAbout";
+import OnlineRetailStores from "./02_onlineRetailStores/OnlineRetailStores";
+import  "./Home.module.scss";
 
 const Home = () => {
     return (
         <div className='home'>
             <MainCarousel />
-            <br />img: company brouchure and more... 
-            <br />carousel Online retail stores
+            <HomeAbout />
+            <OnlineRetailStores />
             <br />img: Korean music market
             <br />img: Process for music
             <br />img: family company
