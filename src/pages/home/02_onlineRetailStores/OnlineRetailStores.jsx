@@ -1,3 +1,7 @@
+import "../Home.module.scss";
+
+import OnlineStores from "../../../assets/onlineRetailStores.gif";
+
 import Itunes from "../../../assets/company_logos/itunes.png";
 import Amazon from "../../../assets/company_logos/amazon.png";
 import Bugs from "../../../assets/company_logos/bugs.jpg";
@@ -10,12 +14,12 @@ import Deezer from "../../../assets/company_logos/deezer.png";
 import Mnet from "../../../assets/company_logos/mnet.png";
 
 import Carousel from 'react-bootstrap/Carousel'
-import Slider from "../../../components/slider/Slider";
+
 
 const OnlineRetailStores = () => {
     return (
         <div>
-            <Slider>
+            <img src={OnlineStores} alt="" />
             <Carousel>
                 <Carousel.Item interval={5000}>
                     <img
@@ -88,9 +92,8 @@ const OnlineRetailStores = () => {
                     />
                 </Carousel.Item>
             </Carousel>
-            </Slider>
         </div>
     )
 }
 
-export default OnlineRetailStores
+export default OnlineRetailStores;
