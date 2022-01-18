@@ -8,6 +8,7 @@ import ProcessForMusicPublishing from "./04_processForMusicPublishing/ProcessFor
 import FamilyCompany from './05_familyCompany/FamilyCompany';
 import Contact from "./06_contact/Contact";
 import Footer from "./08_footer/Footer";
+import KakaoMap from "./07_kakaoMap/KakaoMap";
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
             <ProcessForMusicPublishing />
             <FamilyCompany />
             <Contact />
-            <br />api: map
+            <KakaoMap />
             <Footer />
         </div>
     )
