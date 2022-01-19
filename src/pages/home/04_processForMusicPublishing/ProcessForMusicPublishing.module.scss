@@ -1,5 +1,9 @@
-.process__img {
+.process__logo {
     display: block;
     margin: 60px auto;
-    width: 100%;
+}
+
+.process_step {
+    display: flex;
+    justify-content: center;
 }

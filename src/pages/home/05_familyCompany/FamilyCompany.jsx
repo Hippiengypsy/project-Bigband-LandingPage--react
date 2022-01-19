@@ -11,16 +11,16 @@ const FamilyCompany = () => {
         <Container>
             <Row>
                 <Col>
-                    <Image className={Styles.family__img} src={Family}/>
+                    <Image className={Styles.family__logo} src={Family}/>
                 </Col>
             </Row>
             <Row>
-                <Col>
-                <Image className={Styles.family__img} src={Bigband} />
-                </Col>
-                <Col>
-                <Image className={Styles.family__img} src={Naturally} />
-                </Col>
+                <div className={Styles.family__img}>
+                    <Col>
+                        <Image src={Bigband} />
+                        <Image src={Naturally} />
+                    </Col>
+                </div>
             </Row>
         </Container>
     )
