@@ -1,10 +1,19 @@
+import { Container, Row , Col, Image} from 'react-bootstrap'
+
+import Styles from "./KoreanMusicMarket.module.scss";
+
+
 import KMarket from "../../../assets/market1.gif";
 
 const KoreanMusicMarket = () => {
     return (
-        <div>
-            <img src={KMarket} alt="" />
-        </div>
+        <Container>
+            <Row>
+                <Col>
+                    <Image className={Styles.kmarket__img} src={KMarket} />
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

@@ -13,15 +13,15 @@ import KakaoMap from "./07_kakaoMap/KakaoMap";
 const Home = () => {
 
     return (
-        <div className='home'>
+        <div className="home">
             <MainCarousel />
             <HomeAbout />
-            <OnlineRetailStores />d
+            <OnlineRetailStores />
             <KoreanMusicMarket />
             <ProcessForMusicPublishing />
             <FamilyCompany />
             <Contact />
-            <KakaoMap />
+            {/* <KakaoMap /> */}
             <Footer />
         </div>
     )

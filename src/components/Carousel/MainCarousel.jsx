@@ -5,11 +5,11 @@ import Main04 from "../../assets/main4.gif";
 import Main05 from "../../assets/main5.gif";
 
 import Carousel from 'react-bootstrap/Carousel'
-// import Styles from "./MainCarousel.module.scss";
+import Styles from "./MainCarousel.module.scss";
 
 const MainCarousel = () => {
     return (
-        <div>
+        <div className={Styles.carousel}>
             <Carousel>
                 <Carousel.Item interval={5000}>
                     <img
