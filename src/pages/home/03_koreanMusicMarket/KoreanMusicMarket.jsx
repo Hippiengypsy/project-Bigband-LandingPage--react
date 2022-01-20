@@ -11,20 +11,20 @@ const KoreanMusicMarket = () => {
     return (
         <Container>
             <Row>
-                <Col>
-                    <Image className={Styles.kmarket__img} src={KMarketLogo} />
+                <Col sm>
+                    <Image className={Styles.kmarket__logo} src={KMarketLogo} />
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    {/* <Image className={Styles.kmarket__img} src={KMarketSubs} /> */}
+                    <Image className={Styles.kmarket__img} src={KMarketSubs} />
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col sm>
                     <Image className={Styles.kmarket__img} src={KMarketMontly01} />
                 </Col>
-                <Col>
+                <Col sm>
                     <Image className={Styles.kmarket__img} src={KMarketMontly02} />
                 </Col>
             </Row>

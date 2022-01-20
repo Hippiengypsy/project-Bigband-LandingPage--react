@@ -17,11 +17,15 @@ const Contact = () => {
                     <Image className={Styles.contact__logo} src={ContactLogo} />
                 </Col>
             </Row>
-            <Row>
-                <Col lg md sm="2">
-                    <Image className={Styles.contact__img} src={ContactAdress} />
-                </Col>
-                <Col lg md sm="4">
+            <div className={Styles.contact__container}>
+
+                <div className={Styles.contact__box}>
+                    <div className={Styles.contact__img}>
+                        <Image  src={ContactAdress} />
+                    </div>
+                </div>
+
+                <div className={Styles.contact__box}>
                     <div className={Styles.contact__text}>
                         <div>
                             <b>North America Office</b><br/>
@@ -39,37 +43,49 @@ const Contact = () => {
                             <span>High-Tech Industrial Zone, Dalian, 116023 China</span>
                         </div>
                     </div>
-                </Col>
-                <Col lg md sm="2">
-                    <Image className={Styles.contact__img} src={ContactTel} />
-                </Col>
-                <Col lg md sm="4">
+                </div>
+
+                <div className={Styles.contact__box}>
+                    <div className={Styles.contact__img}>
+                        <Image src={ContactTel} />
+                    </div>
+                </div>
+
+                <div className={Styles.contact__box}>
                     <div className={Styles.contact__text}>
                         <b>+82-2-6012-8915</b>
                     </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col lg md sm="2">
-                    <Image className={Styles.contact__img} src={ContactEmail} />
-                </Col>
-                <Col lg md sm="4">
-                    <div className={Styles.contact__text}>
-                        <span>음원문의 : jacob@bigbandent.com</span><br/>
-                        <span>정산문의 : julie@bigbandent.com</span><br/>
-                        <span>해외유통문의 : gabriel@bigbandent.com</span><br/>
-                        <span>녹음실예약 : dm8915@bigband.kr</span>
+                </div>
+            </div>
+            <div className={Styles.contact__container}>
+
+                <div className={Styles.contact__box}>
+                    <div className={Styles.contact__img}>
+                        <Image src={ContactEmail} />
                     </div>
-                </Col>
-                <Col lg md sm="2">
-                    <Image className={Styles.contact__img} src={ContactFax} />
-                </Col>
-                <Col lg md sm="4">
+                </div>
+
+                <div className={Styles.contact__box}>
+                    <div className={Styles.contact__text}>
+                            <span>음원문의 : jacob@bigbandent.com</span><br/>
+                            <span>정산문의 : julie@bigbandent.com</span><br/>
+                            <span>해외유통문의 : gabriel@bigbandent.com</span><br/>
+                            <span>녹음실예약 : dm8915@bigband.kr</span>
+                    </div>
+                </div>
+
+                <div className={Styles.contact__box}>
+                    <div className={Styles.contact__img}>
+                        <Image src={ContactFax} />
+                    </div>
+                </div>
+
+                <div className={Styles.contact__box}>
                     <div className={Styles.contact__text}>
                         <b>+82-2-6008-0708 (fax)</b>
                     </div>
-                </Col>
-            </Row>
+                </div>
+            </div>
         </Container>
     )
 }

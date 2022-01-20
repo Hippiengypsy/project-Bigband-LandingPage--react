@@ -40,5 +40,5 @@ export default function Map() {
     infowindow.open(map, marker); 
   };
 
-  return <div id="map" style={{ width: "100vw", height: "100vh" }}></div>;
+  return <div id="map" style={{ width: "940px", height: "370px" }}></div>;
 }

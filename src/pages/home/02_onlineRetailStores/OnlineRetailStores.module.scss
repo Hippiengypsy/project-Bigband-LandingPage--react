@@ -2,9 +2,10 @@
     display: block;
     margin: 60px auto;
 }
-.carousel__Item {
+.carousel__item {
     img {
-        height: 300px;
-        margin: 0px auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
     }
 }

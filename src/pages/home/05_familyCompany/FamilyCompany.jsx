@@ -2,7 +2,7 @@ import { Container, Row , Col, Image} from 'react-bootstrap'
 
 import Styles from "./FamilyCompany.module.scss";
 
-import Family from "../../../assets/family_top.gif";
+import Family from "../../../assets/family_top.png";
 import Bigband from "../../../assets/family1.gif";
 import Naturally from "../../../assets/family2.gif";
 

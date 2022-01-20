@@ -1,9 +1,18 @@
-.about__img {
-    margin: 60px;
-    width: auto;
+.about {
+    margin: 40px;
+    width: 100%;
+}
+
+.about__img{
+    margin: 40px 0;
 }
 
 .about__text{
-    margin: 40px;
-    font-size: 20px;
+    // margin: 40px;
+    font-size: 12px;
+    width: 100%;
+
 }
+// .row>* {
+//     flex-shrink: 1;
+// }

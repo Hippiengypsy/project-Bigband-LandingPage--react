@@ -1,18 +1,14 @@
 import Map from "../../../components/map/Map";
-import "./KakaoMap.module.scss";
-import { Row, Col } from 'react-bootstrap/'
+import Styles from "./KakaoMap.module.scss";
+
 
 const KakaoMap = () => {
     return (
-        <Row>
-            <Col xs={12}>
-                <Row center="xs">
-                    <Col xs={6}>
-                        <Map />
-                    </Col>
-                </Row>
-            </Col>
-        </Row>
+        <div className={Styles.map__container}>
+            <div className={Styles.map__box}>
+                <Map className={Styles.map__box}/>
+            </div>
+        </div>
     )
 }
 

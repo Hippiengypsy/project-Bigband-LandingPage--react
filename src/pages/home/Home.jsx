@@ -1,4 +1,4 @@
-import  "./Home.module.scss";
+import Styles from "./Home.module.scss";
 
 import MainCarousel from "../../components/carousel/MainCarousel";
 import HomeAbout from "./01_about/HomeAbout";
@@ -13,7 +13,7 @@ import KakaoMap from "./07_kakaoMap/KakaoMap";
 const Home = () => {
 
     return (
-        <div className="home">
+        <div className={Styles.home}>
             <MainCarousel />
             <HomeAbout />
             <OnlineRetailStores />
@@ -21,7 +21,7 @@ const Home = () => {
             <ProcessForMusicPublishing />
             <FamilyCompany />
             <Contact />
-            {/* <KakaoMap /> */}
+            <KakaoMap />
             <Footer />
         </div>
     )

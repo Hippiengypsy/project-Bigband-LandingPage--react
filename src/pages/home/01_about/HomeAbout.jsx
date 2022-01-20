@@ -4,7 +4,7 @@ import About from "../../../assets/about1.gif";
 
 const HomeAbout = () => {
     return (
-        <Container>
+        <Container className={Styles.about}>
             <Row>
                 <Image className={Styles.about__img} src={About} />
             </Row>
