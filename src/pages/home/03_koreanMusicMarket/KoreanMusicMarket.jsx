@@ -15,12 +15,12 @@ const KoreanMusicMarket = () => {
                     <Image className={Styles.kmarket__logo} src={KMarketLogo} />
                 </Col>
             </Row>
-            <Row>
+            <Row className={Styles.general__box}>
                 <Col>
                     <Image className={Styles.kmarket__img} src={KMarketSubs} />
                 </Col>
             </Row>
-            <Row>
+            <Row className={Styles.general__box}>
                 <Col sm>
                     <Image className={Styles.kmarket__img} src={KMarketMontly01} />
                 </Col>

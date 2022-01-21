@@ -6,7 +6,7 @@ const KakaoMap = () => {
     return (
         <div className={Styles.map__container}>
             <div className={Styles.map__box}>
-                <Map className={Styles.map__box}/>
+                <Map className={Styles.map__item}/>
             </div>
         </div>
     )

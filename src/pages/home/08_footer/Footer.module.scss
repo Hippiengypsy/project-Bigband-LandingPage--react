@@ -1,7 +1,29 @@
 .footer {
-    display: inline-block;
+    background-color: #474747;
+    width: 100%;
+    color: #b2b2b2;
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 50px;
+
 }
-h {
-    font-size: 20px;
+
+.footer__icons {
+    float: right;
+
+    svg {
+    margin: 0 10px;
+    }
+}
+
+p {
+    font-size: 15px;
     font-weight: bold;
+    align-items: center;
 }

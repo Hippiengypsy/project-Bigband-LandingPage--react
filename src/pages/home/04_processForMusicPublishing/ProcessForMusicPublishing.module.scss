@@ -6,7 +6,10 @@
 .process_step {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
+    height: 725px;
+    width: 1116px;
 }
 
 .process_step01 .process_step02 .process_step03 .process_step04 {

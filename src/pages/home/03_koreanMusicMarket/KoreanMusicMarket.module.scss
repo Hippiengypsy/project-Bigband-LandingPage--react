@@ -3,6 +3,12 @@
     margin: 60px auto;
 }
 
+.general__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .kmarket__img {
     width: 100%;
 }
