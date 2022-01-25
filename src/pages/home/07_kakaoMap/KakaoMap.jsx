@@ -1,14 +1,15 @@
+import ContainerBox from "../../../components/layoutBox/ContainerBox";
 import Map from "../../../components/map/Map";
 import Styles from "./KakaoMap.module.scss";
 
 
 const KakaoMap = () => {
     return (
-        <div className={Styles.map__container}>
+        <ContainerBox>
             <div className={Styles.map__box}>
                 <Map className={Styles.map__item}/>
             </div>
-        </div>
+        </ContainerBox>
     )
 }
 

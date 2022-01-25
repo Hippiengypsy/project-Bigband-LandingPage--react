@@ -1,15 +1,27 @@
-import { Container, Row, Col, Image} from 'react-bootstrap'
+import ContainerBox from '../../../components/layoutBox/ContainerBox';
+import FlexBox from '../../../components/layoutBox/FlexBox';
+import Item from '../../../components/layoutBox/Item';
+
 import Styles from "./HomeAbout.module.scss";
-import About from "../../../assets/about1.gif";
+
+import About01 from "../../../assets/about01.png";
+import About02 from "../../../assets/about02.png";
+import About03 from "../../../assets/about03.png";
 
 const HomeAbout = () => {
     return (
-        <Container className={Styles.about}>
-            <Row>
-                <Image className={Styles.about__img} src={About} />
-            </Row>
-            <Row>
-                <Col md className={Styles.about__text}>
+        <ContainerBox>
+            <FlexBox>
+                <div className={Styles.about__img}>
+                    <img  src={About01} alt=''/>
+
+                    <img  src={About02} alt=''/>
+
+                    <img  src={About03} alt=''/>
+                </div>
+            </FlexBox>
+            <FlexBox>
+                <Item>
                     빅밴드는 디지털 음반 유통 전문회사입니다.뮤지션과 빅밴드가 함께 일을 한다는
                     것은 완전히 새로운 경험일 것입니다.
                     왜냐하면 뮤지션들이 어떠한 음악을 하던지 간에 빅밴드의 “Fun & Creative” 한
@@ -19,8 +31,8 @@ const HomeAbout = () => {
 
                     그러나 빅밴드에서는 “정말 재미있는 일”이라고 합니다.
                     빅밴드와 함께 “정말 재미있는 일”을 같이 하시지 않으시겠습니까?
-                </Col>
-                <Col md className={Styles.about__text}>
+                </Item>
+                <Item>
                     BIGBAND is a digital music distribution company. Starting a relationship
                     with BIGBAND will be a brand new and exciting experience for your
                     company. No matter what musicians create, BIGBAND's "fun and
@@ -31,10 +43,10 @@ const HomeAbout = () => {
 
                     BIGBAND promotes the idea of "Real Fun". Would you like to be a
                     partner with "Real Fun"?
-                </Col>
-            </Row>
-            <Row>
-                <Col md className={Styles.about__text}>
+                </Item>
+            </FlexBox>
+            <FlexBox>
+                <Item>
                     ビッグバンドはデジタルアルバム流通専門会社です。ミュージシャンとビッグバンドが一緒になり、
                     完全に新しい経験になると思います。
                     ミュージシャンたちがどのような音楽にしてもビッグバンドの"Fun&Creative"的な流通サービスで
@@ -43,8 +55,8 @@ const HomeAbout = () => {
                     出来ると思います。
 
                     ビッグバンドと共に"本当に面白いビジネス"を一緒にしていただけませんか?"
-                </Col>
-                <Col md className={Styles.about__text}>
+                </Item>
+                <Item>
                     “BIGBAND”是一家数字唱片流通专业公司.音乐家与“BIGBAND”共事将会
                     是一次崭新的体验.因为无论音乐家们创作出作品的种类如何，“BIG-
                     BAND”“Fun & Creative”的流通服务在创造美丽世界中都会起到非常大
@@ -53,9 +65,9 @@ const HomeAbout = () => {
                     情”.
 
                     不想与“BIGBAND”共同做这一项”非常有趣的事情”吗？
-                </Col>
-            </Row>
-        </Container>
+                </Item>
+            </FlexBox>
+        </ContainerBox>
     )
 }
 

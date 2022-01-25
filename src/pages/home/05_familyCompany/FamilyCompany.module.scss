@@ -4,5 +4,20 @@
 }
 
 .family__img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width:767px){
+    .family__logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 222px;
+        width: 100%;
+    }
 }

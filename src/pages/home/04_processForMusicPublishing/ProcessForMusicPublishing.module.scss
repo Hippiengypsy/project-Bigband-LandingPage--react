@@ -6,25 +6,31 @@
 .process_step {
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
-    height: 725px;
-    width: 1116px;
+    height: 100%;
+    width: 100%;
 }
 
 .process_step01 .process_step02 .process_step03 .process_step04 {
-    min-height: 150px;
-    flex-basis: 23.5%;
+    // flex-basis: 23.5%;
     flex-shrink: 1;
     flex-grow: 1;
 }
 @media screen and (max-width:1023px){
     .process_step01 .process_step02 .process_step03 .process_step04{ 
         flex-basis: 49%;
+
     }
 }
 @media screen and (max-width:767px){
     .process_step01 .process_step02 .process_step03 .process_step04 {
         flex-basis: 100%;
+    }
+    .process__logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 282px;
+        width: 100%;
     }
 }

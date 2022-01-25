@@ -1,4 +1,4 @@
-import { Container, Row , Col, Image} from 'react-bootstrap'
+import { Row , Col, Image} from 'react-bootstrap'
 
 import Styles from "./KoreanMusicMarket.module.scss";
 
@@ -6,29 +6,30 @@ import KMarketLogo from "../../../assets/kmarket_top.png";
 import KMarketSubs from "../../../assets/kmarket_subscriber.png";
 import KMarketMontly01 from "../../../assets/kmarket_monthly01.png";
 import KMarketMontly02 from "../../../assets/kmarket_monthly02.png";
+import ContainerBox from './../../../components/layoutBox/ContainerBox';
 
 const KoreanMusicMarket = () => {
     return (
-        <Container>
+        <ContainerBox>
             <Row>
                 <Col sm>
                     <Image className={Styles.kmarket__logo} src={KMarketLogo} />
                 </Col>
             </Row>
-            <Row className={Styles.general__box}>
-                <Col>
+            <div className={Styles.general__box}>
+                <div>
                     <Image className={Styles.kmarket__img} src={KMarketSubs} />
-                </Col>
-            </Row>
-            <Row className={Styles.general__box}>
-                <Col sm>
+                </div>
+            </div>
+            <div className={Styles.general__box}>
+                <div>
                     <Image className={Styles.kmarket__img} src={KMarketMontly01} />
-                </Col>
-                <Col sm>
+                </div>
+                <div>
                     <Image className={Styles.kmarket__img} src={KMarketMontly02} />
-                </Col>
-            </Row>
-        </Container>
+                </div>
+            </div>
+        </ContainerBox>
     )
 }
 

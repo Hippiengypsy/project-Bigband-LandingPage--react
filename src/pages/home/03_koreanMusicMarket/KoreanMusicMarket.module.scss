@@ -1,3 +1,8 @@
+.general__container {
+    width: 960px;
+    margin: 0 auto;
+}
+
 .kmarket__logo {
     display: block;
     margin: 60px auto;
@@ -10,5 +15,16 @@
 }
 
 .kmarket__img {
+    height: 100%;
     width: 100%;
+    max-width: 883px;
+}
+@media screen and (max-width:767px){
+    .kmarket__logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 282px;
+        width: 100%;
+    }
 }

@@ -3,9 +3,19 @@
     margin: 60px auto;
 }
 .carousel__item {
+    margin-bottom: 100px;
     img {
         display: block;
         margin: 0 auto;
         max-width: 800px;
+    }
+}
+@media screen and (max-width:767px){
+    .stores__logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 302px;
+        width: 100%;
     }
 }

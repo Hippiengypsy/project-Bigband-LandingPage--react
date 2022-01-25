@@ -1,0 +1,20 @@
+.containerBox {
+    max-width: 960px;
+    width: 100%;
+
+    height: auto;
+    margin: 0 auto;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+    margin: 30px;
+}
+.item{
+    // min-height: 200px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}

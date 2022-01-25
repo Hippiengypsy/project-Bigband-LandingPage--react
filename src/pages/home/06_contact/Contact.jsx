@@ -8,10 +8,11 @@ import ContactAdress from "../../../assets/contact_adress.png";
 import ContactTel from "../../../assets/contact_tel.png";
 import ContactEmail from "../../../assets/contact_email.png";
 import ContactFax from "../../../assets/contact_fax.png";
+import ContainerBox from '../../../components/layoutBox/ContainerBox';
 
 const Contact = () => {
     return (
-        <Container>
+        <ContainerBox>
             <Row>
                 <Col>
                     <Image className={Styles.contact__logo} src={ContactLogo} />
@@ -21,7 +22,7 @@ const Contact = () => {
 
                 <div className={Styles.contact__box}>
                     <div className={Styles.contact__img}>
-                        <Image  src={ContactAdress} />
+                        <Image src={ContactAdress} />
                     </div>
                 </div>
 
@@ -86,7 +87,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </Container>
+        </ContainerBox>
     )
 }
 

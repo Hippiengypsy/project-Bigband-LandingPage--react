@@ -5,10 +5,11 @@ import Styles from "./FamilyCompany.module.scss";
 import Family from "../../../assets/family_top.png";
 import Bigband from "../../../assets/family1.gif";
 import Naturally from "../../../assets/family2.gif";
+import ContainerBox from '../../../components/layoutBox/ContainerBox';
 
 const FamilyCompany = () => {
     return (
-        <Container>
+        <ContainerBox>
             <Row>
                 <Col>
                     <Image className={Styles.family__logo} src={Family}/>
@@ -22,7 +23,7 @@ const FamilyCompany = () => {
                     </Col>
                 </div>
             </Row>
-        </Container>
+        </ContainerBox>
     )
 }
 
