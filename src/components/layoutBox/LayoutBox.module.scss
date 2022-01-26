@@ -8,13 +8,32 @@
 
 .flexbox{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1em;
     
     margin: 30px;
 }
-.item{
-    // min-height: 200px;
+.item__2col{
     flex-basis: 300px;
     flex-grow: 1;
+    margin-bottom: 30px;
+}
+.item__3col{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+.item__4col{
+    flex-basis: 100px;
+    // flex-grow: 4;
+}
+
+@media screen and (max-width: 768px) {
+    .flexbox{
+        display: block;
+        flex-wrap: nowrap;
+
+        gap: 1em;
+        
+        margin: 30px;
+    }
 }
