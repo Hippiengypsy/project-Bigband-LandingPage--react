@@ -23,14 +23,14 @@ const KoreanMusicMarket = () => {
                     <Image className={Styles.kmarket__subsImg} src={KMarketSubs} />
                 </div>
             </FlexBox>
-            <div className={Styles.flexbox}>
+            <FlexBox>
                 <div className={Styles.itemBox}>
                     <Image className={Styles.kmarket__monthlyImg01} src={KMarketMontly01} />
                 </div>
                 <div className={Styles.itemBox}>
                     <Image className={Styles.kmarket__monthlyImg02} src={KMarketMontly02} />
                 </div>
-            </div>
+            </FlexBox>
         </ContainerBox>
     )
 }

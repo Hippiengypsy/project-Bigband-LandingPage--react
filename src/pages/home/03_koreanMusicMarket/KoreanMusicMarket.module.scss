@@ -8,12 +8,12 @@
     margin: 60px auto;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 30px;
-}
+// .flexbox {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     margin: 0 30px;
+// }
 .itemBox {
     display: flex;
     margin-bottom: 30px;
@@ -25,13 +25,13 @@
 }
 .kmarket__monthlyImg01 {
     width: 100%;
-    // width: 415px;
-    // margin: 10px auto;
+    max-width: 415px;
+    margin: 10px auto;
 }
 .kmarket__monthlyImg02 {
     width: 100%;
-    // width: 468px;
-    // margin: 10px auto;
+    max-width: 468px;
+    margin: 10px auto;
 
 }
 @media screen and (max-width:767px){
