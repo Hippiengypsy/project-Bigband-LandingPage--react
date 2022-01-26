@@ -19,16 +19,12 @@ const ProcessForMusicPublishing = () => {
             </Row>
             <div className={Styles.process_step}>
                 <div className={Styles.process_step01}>
-                    <Image src={Process01} />
+                    <img className={Styles.process_img01} src={Process01} alt='' />
+                    <img className={Styles.process_img02} src={Process02} alt='' />
                 </div>
                 <div className={Styles.process_step02}>
-                    <Image src={Process02} />
-                </div>
-                <div className={Styles.process_step03}>
-                    <Image src={Process03} />
-                </div>
-                <div className={Styles.process_step04}>
-                    <Image src={Process04} />
+                    <img className={Styles.process_img03} src={Process03} alt='' />
+                    <img className={Styles.process_img04} src={Process04} alt='' />
                 </div>
             </div>
         </ContainerBox>
