@@ -7,8 +7,8 @@ import NavLogo from "../../assets/logo.gif";
 const NavigationBar = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Container>
+            <Navbar className={Styles.navbar} collapseOnSelect expand="md" variant="light">
+                <Container className={Styles.navbar__container}>
                     <Navbar.Brand href="#home">
                         <img src={NavLogo} alt="" srcset="" />
                     </Navbar.Brand>
