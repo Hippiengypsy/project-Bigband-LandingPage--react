@@ -1,72 +1,80 @@
-.general__container {
-    width: 960px;
-    margin: 0 auto;
-}
-
 .contact__logo {
     display: block;
     margin: 60px auto;
 }
 
 .contact__container {
-    display: flex;
+    display: block;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 883px;
-    margin:0 auto
+    margin:0 30px;
 }
+
 .contact__box {
-    // background-color: lightcoral;
-
-    min-height: 150px;
-    flex-basis: 23.5%;
-    flex-shrink: 1;
-
     display: flex;
-    align-items: center;
-    // justify-content: center;
-    // margin-right: 40px;
+}
+.contact__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
 
 }
-
 .contact__img {
-    flex-grow: 1;
-
+    flex-basis: 10%;
 }
 .contact__text {
-    font-size: 12px;
-    width: 100%;
-    flex-grow: 4;
-
+    flex-basis: 40%;
+    margin: 0 auto;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
 }
 
-@media screen and (max-width:1023px){
-    .contact__box { 
-        flex-basis: 49%;
-    }
-}
-@media screen and (max-width:767px){
+@media screen and (min-width:468px) and (max-width:928px) {
     .contact__box {
-        flex-basis: 100%;
-        // margin-right: 50px;
-    }
-}
-
-@media screen and (max-width:767px){
-    .contact__logo{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 142px;
+        display: block;
         width: 100%;
     }
-    .about__textBox{
-        justify-content: center;
-    }
-    .contact__text{
-        font-size: 14px;
+    .contact__item {
+        display: flex;
         width: 100%;
         margin-bottom: 60px;
     }
+    .contact__img {
+        flex-basis: 30%;
+        text-align: right;
+        margin-bottom: 60px;
+    }
+    .contact__text {
+        flex-basis: 70%;
+        margin-left: 20%;
+        font-size: 14px;
+    }
 }
+@media screen and (max-width:467px){
+    .contact__box {
+        display: block;
+        width: 100%;
+    }
+    .contact__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .contact__img {
+        margin-bottom: 60px;
+        text-align: center;
 
+        img {
+            width: 100%;
+            max-width: 117px;
+        }
+    }
+    .contact__text {
+        font-size: 14px;
+        margin: 0 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
