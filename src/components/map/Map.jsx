@@ -24,6 +24,17 @@ export default function Map() {
     let marker = new kakao.maps.Marker({
       position: markerPosition,
     });
+		// 지도 타입 변경 컨트롤을 생성한다
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+
+		// 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+
+		// 지도에 확대 축소 컨트롤을 생성한다
+		var zoomControl = new kakao.maps.ZoomControl();
+
+		// 지도의 우측에 확대 축소 컨트롤을 추가한다
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
     // 마커를 지도 위에 표시
     marker.setMap(map);
@@ -40,5 +51,5 @@ export default function Map() {
     infowindow.open(map, marker); 
   };
 
-  return <div id="map" style={{ width: "940px", height: "370px" }}></div>;
+  return <div id="map" style={{ width: "100%", height: "370px" }}></div>;
 }
