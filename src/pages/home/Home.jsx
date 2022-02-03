@@ -1,6 +1,6 @@
 import Styles from "./Home.module.scss";
 
-import MainCarousel from "../../components/carousel/MainCarousel";
+import MainCarousel from './../../components/Carousel/MainCarousel';
 import HomeAbout from "./01_about/HomeAbout";
 import OnlineRetailStores from "./02_onlineRetailStores/OnlineRetailStores";
 import KoreanMusicMarket from "./03_koreanMusicMarket/KoreanMusicMarket";
