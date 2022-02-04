@@ -8,7 +8,17 @@ import About01 from "../../../assets/about01.png";
 import About02 from "../../../assets/about02.png";
 import About03 from "../../../assets/about03.png";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+// ..
+AOS.init();
+
 const HomeAbout = () => {
+    useEffect(() => {
+        AOS.init({duration: 2000});
+    }, []);
+    
     return (
         <ContainerBox>
             <FlexBox>
@@ -24,6 +34,7 @@ const HomeAbout = () => {
             </FlexBox>
             <FlexBox>
                 <Item2Col>
+                    <div data-aos="fade-up">
                     빅밴드는 디지털 음반 유통 전문회사입니다.뮤지션과 빅밴드가 함께 일을 한다는
                     것은 완전히 새로운 경험일 것입니다.
                     왜냐하면 뮤지션들이 어떠한 음악을 하던지 간에 빅밴드의 “Fun & Creative” 한
@@ -33,6 +44,7 @@ const HomeAbout = () => {
 
                     그러나 빅밴드에서는 “정말 재미있는 일”이라고 합니다.
                     빅밴드와 함께 “정말 재미있는 일”을 같이 하시지 않으시겠습니까?
+                    </div>
                 </Item2Col>
                 <Item2Col>
                     BIGBAND is a digital music distribution company. Starting a relationship

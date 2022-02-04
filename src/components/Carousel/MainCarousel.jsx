@@ -9,7 +9,7 @@ import Styles from "./MainCarousel.module.scss";
 
 const MainCarousel = () => {
     return (
-        <div >
+        <div className={Styles.carousel__layout}>
             <Carousel className={Styles.carousel}>
                 <Carousel.Item interval={5000}>
                     <img
