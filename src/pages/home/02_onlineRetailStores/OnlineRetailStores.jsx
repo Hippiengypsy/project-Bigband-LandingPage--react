@@ -14,20 +14,29 @@ import Spotify from "../../../assets/company_logos/spotify.png";
 import Youtubemusic from "../../../assets/company_logos/youtubemusic.png";
 import Deezer from "../../../assets/company_logos/deezer.png";
 import Mnet from "../../../assets/company_logos/mnet.png";
-import ContainerBox from "../../../components/layoutBox/ContainerBox";
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+// ..
+AOS.init();
 
 const OnlineRetailStores = () => {
+    useEffect(() => {
+        AOS.init({duration: 2000});
+    }, []);
+
     return (
         <Container>
             <Row>
                 <Col>
-                    <Image className={Styles.stores__logo} src={OnlineStores} />
+                    <div data-aos="fade-up">
+                        <Image className={Styles.stores__logo} src={OnlineStores} />
+                    </div>
                 </Col>
             </Row>
 
-                <div className={Styles.carousel__item}>
+                <div data-aos="fade-up" className={Styles.carousel__item}>
                 <Carousel>
                     <Carousel.Item interval={5000}>
                         <img
