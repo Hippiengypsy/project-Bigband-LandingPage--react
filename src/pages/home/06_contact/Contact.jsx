@@ -10,17 +10,26 @@ import ContactEmail from "../../../assets/contact_email.png";
 import ContactFax from "../../../assets/contact_fax.png";
 import ContainerBox from '../../../components/layoutBox/ContainerBox';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+// ..
+
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <ContainerBox>
             <Row>
                 <Col>
-                    <Image className={Styles.contact__logo} src={ContactLogo} />
+                    <Image data-aos="fade-up" className={Styles.contact__logo} src={ContactLogo} />
                 </Col>
             </Row>
             <div className={Styles.contact__container}>
                 <div className={Styles.contact__box}>
-                    <div className={Styles.contact__item}>
+                    <div data-aos="fade-right" className={Styles.contact__item}>
                         <div className={Styles.contact__img}>
                             <Image src={ContactAdress} />
                         </div>
@@ -43,7 +52,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className={Styles.contact__item}>
+                    <div data-aos="fade-left" className={Styles.contact__item}>
                         <div className={Styles.contact__img}>
                             <Image src={ContactTel} />
                         </div>
@@ -54,7 +63,7 @@ const Contact = () => {
                 </div>
                 
                 <div className={Styles.contact__box}>
-                    <div className={Styles.contact__item}>
+                    <div data-aos="fade-right" className={Styles.contact__item}>
                         <div className={Styles.contact__img}>
                             <Image src={ContactEmail} />
                         </div>
@@ -66,7 +75,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className={Styles.contact__item}>
+                    <div data-aos="fade-left" className={Styles.contact__item}>
                         <div className={Styles.contact__img}>
                             <Image src={ContactFax} />
                         </div>

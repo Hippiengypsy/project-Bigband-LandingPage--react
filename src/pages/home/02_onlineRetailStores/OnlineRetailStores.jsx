@@ -19,11 +19,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
 // ..
-AOS.init();
 
 const OnlineRetailStores = () => {
     useEffect(() => {
-        AOS.init({duration: 2000});
+        AOS.init();
     }, []);
 
     return (

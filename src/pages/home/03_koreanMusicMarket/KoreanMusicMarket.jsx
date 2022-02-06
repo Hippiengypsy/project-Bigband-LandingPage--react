@@ -13,11 +13,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
 // ..
-AOS.init();
 
 const KoreanMusicMarket = () => {
     useEffect(() => {
-        AOS.init({duration: 3000});
+        AOS.init();
     }, []);
 
     return (
