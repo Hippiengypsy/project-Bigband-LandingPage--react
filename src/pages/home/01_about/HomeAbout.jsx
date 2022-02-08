@@ -16,7 +16,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
 // ..
-AOS.init({duration: 3000, offset: 200, startEvent: 'load'});
+AOS.init({duration: 3000, offset: 100, startEvent: 'load'});
 
 const HomeAbout = () => {
     useEffect(() => {
@@ -25,7 +25,7 @@ const HomeAbout = () => {
     
     return (
         <ContainerBox>
-            <FlexBox>
+            <FlexBox >
                 <div data-aos="fade-up" ease-out className={Styles.about__img}>
                     <img src={About01} alt=''/>
                 </div>
@@ -37,6 +37,8 @@ const HomeAbout = () => {
                 </div>
             </FlexBox>
             <FlexBox>
+                {/* scroll to div id */}
+                <div id="About" />
                 <Item2Col>
                     <div data-aos="fade-right">
                         <img src={FlagKorea} alt="" /><br/><br/>

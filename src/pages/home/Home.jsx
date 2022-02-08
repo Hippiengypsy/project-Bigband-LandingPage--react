@@ -19,7 +19,7 @@ const Home = () => {
             <OnlineRetailStores />
             <KoreanMusicMarket />
             <ProcessForMusicPublishing />
-            <FamilyCompany />
+            <FamilyCompany id="test"/>
             <Contact />
             <KakaoMap />
             <Footer />

@@ -23,6 +23,8 @@ const ProcessForMusicPublishing = () => {
     return (
         <ContainerBox>
             <Row>
+            {/* scroll to div id */}
+            <div id="Work" />
                 <Col data-aos="fade-up">
                     <Image className={Styles.process__logo} src={ProcessLogo} />
                 </Col>

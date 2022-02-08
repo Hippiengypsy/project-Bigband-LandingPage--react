@@ -23,6 +23,8 @@ const Contact = () => {
     return (
         <ContainerBox>
             <Row>
+            {/* scroll to div id */}
+            <div id="Contact" />
                 <Col>
                     <Image data-aos="fade-up" className={Styles.contact__logo} src={ContactLogo} />
                 </Col>
