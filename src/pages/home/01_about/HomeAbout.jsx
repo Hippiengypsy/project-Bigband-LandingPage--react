@@ -7,6 +7,10 @@ import Styles from "./HomeAbout.module.scss";
 import About01 from "../../../assets/about01.png";
 import About02 from "../../../assets/about02.png";
 import About03 from "../../../assets/about03.png";
+import FlagKorea from "../../../assets/flags/korea1.gif";
+import FlagUSA from "../../../assets/flags/usa1.gif";
+import FlagJapan from "../../../assets/flags/japan1.gif";
+import FlagChina from "../../../assets/flags/china1.gif";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -23,18 +27,19 @@ const HomeAbout = () => {
         <ContainerBox>
             <FlexBox>
                 <div data-aos="fade-up" ease-out className={Styles.about__img}>
-                    <img  src={About01} alt=''/>
+                    <img src={About01} alt=''/>
                 </div>
                 <div data-aos="fade-up" className={Styles.about__img}>
-                    <img  src={About02} alt=''/>
+                    <img src={About02} alt=''/>
                 </div>
                 <div data-aos="fade-up" className={Styles.about__img}>
-                    <img  src={About03} alt=''/>
+                    <img src={About03} alt=''/>
                 </div>
             </FlexBox>
             <FlexBox>
                 <Item2Col>
                     <div data-aos="fade-right">
+                        <img src={FlagKorea} alt="" /><br/><br/>
                         빅밴드는 디지털 음반 유통 전문회사입니다.뮤지션과 빅밴드가 함께 일을 한다는
                         것은 완전히 새로운 경험일 것입니다.
                         왜냐하면 뮤지션들이 어떠한 음악을 하던지 간에 빅밴드의 “Fun & Creative” 한
@@ -48,6 +53,7 @@ const HomeAbout = () => {
                 </Item2Col>
                 <Item2Col>
                     <div data-aos="fade-left">
+                        <img src={FlagUSA} alt="" /><br/><br/>
                         BIGBAND is a digital music distribution company. Starting a relationship
                         with BIGBAND will be a brand new and exciting experience for your
                         company. No matter what musicians create, BIGBAND's "fun and
@@ -64,6 +70,7 @@ const HomeAbout = () => {
             <FlexBox>
                 <Item2Col>
                     <div data-aos="fade-right">
+                        <img src={FlagJapan} alt="" /><br/><br/>
                         ビッグバンドはデジタルアルバム流通専門会社です。ミュージシャンとビッグバンドが一緒になり、
                         完全に新しい経験になると思います。
                         ミュージシャンたちがどのような音楽にしてもビッグバンドの"Fun&Creative"的な流通サービスで
@@ -76,6 +83,7 @@ const HomeAbout = () => {
                 </Item2Col>
                 <Item2Col>
                     <div data-aos="fade-left">
+                        <img src={FlagChina} alt="" /><br/><br/>
                         “BIGBAND”是一家数字唱片流通专业公司.音乐家与“BIGBAND”共事将会
                         是一次崭新的体验.因为无论音乐家们创作出作品的种类如何，“BIG-
                         BAND”“Fun & Creative”的流通服务在创造美丽世界中都会起到非常大
