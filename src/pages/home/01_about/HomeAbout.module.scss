@@ -5,28 +5,9 @@
     flex-wrap: nowrap;
     gap: 1em;
 
-    img {
+    a,img {
         margin: 0 auto;
         width: 100%;
         max-width: 228px;
     }
 }
-
-
-// @media screen and (max-width: 776px){
-//     .about__img{
-//         // margin: 60px auto;
-
-//         img {
-//             max-width: 228px;
-//             margin: 0 auto;
-//             width: 100%;
-//         }
-//     }
-//     // .flexbox{
-//     //     display: block;
-//     //     gap: 1em;
-        
-//     //     margin: 30px;
-//     // }
-// }

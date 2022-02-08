@@ -27,7 +27,9 @@ const HomeAbout = () => {
         <ContainerBox>
             <FlexBox >
                 <div data-aos="fade-up" ease-out className={Styles.about__img}>
-                    <img src={About01} alt=''/>
+                    <a href="https://www.bigbandent.com/inc/bigband.pdf" target="blank">
+                        <img src={About01} alt=''/>
+                    </a>
                 </div>
                 <div data-aos="fade-up" className={Styles.about__img}>
                     <img src={About02} alt=''/>

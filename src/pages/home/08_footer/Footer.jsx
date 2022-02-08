@@ -19,9 +19,15 @@ const Footer = () => {
                 </div>
                 <div className={Styles.footer__item__right}>
                     <div className={Styles.footer__icons}>
-                        <YouTubeIcon fontSize='large'/>
-                        <FacebookIcon fontSize='large'/>
-                        <TwitterIcon fontSize='large'/>
+                        <a href="https://www.youtube.com/c/BIGBANDEntertainment" target="blank">
+                            <YouTubeIcon fontSize='large'/>
+                        </a>
+                        <a href="https://www.facebook.com/bigbandsoundsolution" target="blank">
+                            <FacebookIcon fontSize='large'/>
+                        </a>
+                        <a href="" target="blank">
+                            <TwitterIcon fontSize='large'/>
+                        </a>
                     </div>
                 </div>
             </div>
